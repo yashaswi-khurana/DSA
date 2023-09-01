@@ -1,14 +1,5 @@
-else if (arr[mid]==data)
-        {
-            cout<<"Value found at index: "<<mid<<endl;
-            break;
-        }
-        else
-        {
-            last = mid-1;
-        }
-        mid = (first+last)/2;
-    }
-    if (first>last)
-    {
-        cout<<"Value not found"<<endl;
+    // for (int i = size-1; i >= index; i--)
+    // {
+    //     arr[i]=arr[i-1];
+    // }
+    // arr[index]=element;

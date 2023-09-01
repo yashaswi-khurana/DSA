@@ -15,19 +15,19 @@ int search(int arr[],int size,int key){
 
 int main()
 {   //Hard Code
-    int arr[10]={5,6,7,-5,10,11,0,9,3,10};
+    // int arr[10]={5,6,7,-5,10,11,0,9,3,10};
 
     //Dynamic
-    // int size;
-    // cout<<"Enter number of element you want to enter in the array:";
-    // cin>>size;
-    // cout<<endl;
-    // int arr[size];
-    // cout<<"Enter Your Array: ";
-    // for (int i = 0; i < size; i++)
-    // {
-    //     cin>>arr[i];
-    // }
+    int size;
+    cout<<"Enter number of element you want to enter in the array:";
+    cin>>size;
+    cout<<endl;
+    int arr[size];
+    cout<<"Enter Your Array: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin>>arr[i];
+    }
     cout<<"Enter the value you want to find: "<<endl;
     int key;
     cin>>key;
