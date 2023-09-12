@@ -1,4 +1,4 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int binary_search(int arr[],int size){
     int data;
@@ -50,3 +50,6 @@ int main()
     binary_search(array,10);
 return 0;
 }
+//Ans:
+// Please enter required value: 5
+// Value found at index: 4

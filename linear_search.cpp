@@ -1,4 +1,4 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int search(int arr[],int size,int key){
     for (int i = 0; i < size; i++)
@@ -45,3 +45,11 @@ int main()
     
 return 0;
 }
+//Ans:
+// Enter number of element you want to enter in the array:10
+//
+// Enter Your Array: 5 6 7 -5 10 11 0 9 3 10
+// Enter the value you want to find:
+// 10
+// Element present at: 4
+// Element is present in the array
