@@ -9,7 +9,7 @@
 // Explanation: 5 is "101" in binary, with complement "010" in binary, which is 2 in base-10.
 
 
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {

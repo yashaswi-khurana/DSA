@@ -1,4 +1,5 @@
-#include<iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 void printarray(int arr[],int size){
     for(int i=0;i<size;i++){
@@ -26,7 +27,7 @@ void sort_0_1(int arr[],int size){
 }
 int main()
 {
-    int arr[100]={0,1,1,0,0,1,0,0};
+    int arr[100]={0,0,0,0,1,1,0,0};
     int size=8;
     sort_0_1(arr,size);
 return 0;

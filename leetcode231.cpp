@@ -6,41 +6,40 @@
 // Output: true
 // Explanation: 20 = 1
 
-
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
 int n = 3;
-while (n!=0)
-{
-    if (n==1)
-    {
-        cout<<"True";   
-        break;
-    }
-    else if(n%2!=0){
-        cout<<"false";
-        break;;
-    }
-    else if (n==2){
-        cout<<"True";
-        break;
-    }
+// while (n!=0)
+// {
+//     if (n==1)
+//     {
+//         cout<<"True";   
+//         break;
+//     }
+//     else if(n%2!=0){
+//         cout<<"false";
+//         break;;
+//     }
+//     else if (n==2){
+//         cout<<"True";
+//         break;
+//     }
     
-    else{
-        n=n/2;
-    }
-}
+//     else{
+//         n=n/2;
+//     }
+// }
 
-// for ( int i = 0;i<=30;i++){
-//             int ans = pow(2,i);
-//             if (ans == n)
-//             {
-//                 return true;
-//             }
-//         }
-//         return false;
+for ( int i = 0;i<=30;i++){
+            int ans = pow(2,i);
+            if (ans == n)
+            {
+                return true;
+            }
+        }
+        return false;
 return 0;
 }
 

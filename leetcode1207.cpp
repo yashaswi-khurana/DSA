@@ -20,7 +20,7 @@
 
  
 
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 // bool occurence_is_unique(){
 

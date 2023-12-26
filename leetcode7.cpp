@@ -6,7 +6,7 @@
 // Output: 321
 
 
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     {
         int temp=n%10;
         rev = rev*10 + temp;
-        n/=10;
+        n=n/10;
     }
     cout<<rev<<endl;
 return 0;

@@ -1,60 +1,54 @@
 #include<iostream>
 using namespace std;
-int Binary_Search(int arr[],int size, int k){
-    //Binary Search
-    int start=0;
-    int end=size-1;
-    int mid = (start/2)+(end/2);
-    while(start<=end){
-        if (k==arr[mid]){
-            return mid;
+int left(int arr[],int size,int k){
+    int s = 0;
+    int e = size-1;
+    int ans = -1;
+    int mid = s+(e-s)/2;
+    while(s<=e){
+        if(arr[mid]==k){
+            ans = mid;
+            e = mid-1;
         }
-        else if(k<arr[mid]){
-            end=mid-1;
+        else if(arr[mid]>k){
+            e = mid-1;
         }
         else{
-            start=mid+1;
+            s = mid+1;
         }
-        mid = (start/2)+(end/2);
+    mid = s+(e-s)/2;
     }
-    return -1;
+    return ans;
 }
-int first_postion(int arr[],int size, int k){
-    //Left Most Element
-    int left = Binary_Search(arr,size,k);
-    if (left==-1)
-    {
-        return -1;
+int right(int arr[],int size,int k){
+    int s = 0;
+    int e = size-1;
+    int ans = -1;
+    int mid = s+(e-s)/2;
+    while(s<=e){
+        if(arr[mid]==k){
+            ans = mid;
+            s = mid+1;
+        }
+        else if(arr[mid]>k){
+            e = mid-1;
+        }
+        else{
+            s = mid+1;
+        }
+        mid = s+(e-s)/2;
     }
-    else{
-    while (left>0 && arr[left]==k)
-    {
-        left=left-1;
-    }
-    return left+1;
-    }
+    return ans;
 }
-int last_postion(int arr[],int size, int k){
-    //Right Most Element
-    int right = Binary_Search(arr,size,k);
-    if (right==-1)
-    {
-        return -1;
-    }
-    else{
-    while (right>0 && arr[right]==k)
-    {
-        right=right+1;
-    }
-    return right-1;
-    }
+int num_of_occurrence(int arr[],int size,int k){
+    int l = left(arr,size,k);
+    int r = right(arr,size,k);
+    return r-l+1;
 }
-int main()
-{
-    int arr[8]={1,3,9,19,19,19,19,21};
-    int ans_first=first_postion(arr,8,12);
-    int ans_last=last_postion(arr,8,12);
-    cout<<ans_first<<endl;
-    cout<<ans_last<<endl;
-return 0;
+int main(){
+    int arr[100]={1,2,3,3,5};
+    int size = 5;
+    int k = 3;
+    int ans = num_of_occurrence(arr,size,k);
+    cout<<ans<<endl;
 }
