@@ -64,5 +64,5 @@ int main()
 return 0;
 }
 
-// - EKO SPOJ: https://www.spoj.com/problems/EKO/ 
+// - EKO SPOJ: https://www.spoj.com/problems/EKO/  
 // - PRATA SPOJ: https://bit.ly/3ExHXt5 
