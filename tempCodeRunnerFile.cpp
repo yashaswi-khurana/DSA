@@ -1,1 +1,4 @@
- 
+if (negative)
+        {
+            ans = -ans;
+        }
