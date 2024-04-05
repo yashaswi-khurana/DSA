@@ -1,4 +1,1 @@
-if (negative)
-        {
-            ans = -ans;
-        }
+    // reverse(begin(ans), end(ans));

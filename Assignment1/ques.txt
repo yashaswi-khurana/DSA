@@ -1,2 +1,0 @@
-write a program/Algorithm to calculate the result of students by taking input from one file and write the result in the second file. MAke your own assumption about the record of the students and the output to be written in the file.
-Write a program/Algorithm to traverse an array, insert element into the array and delete element and search an element from the array.
